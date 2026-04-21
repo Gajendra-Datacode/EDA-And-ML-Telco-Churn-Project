@@ -67,6 +67,9 @@ This project utilizes a comprehensive data cleaning and exploratory data analysi
 ---
 
 ## Cleaned Dataset Summary
+
+**[View Clean CSV Data](Telco_Churn_Clean_Dataset.csv)**
+
 ### 1. Data Integrity
 * **Numerical Imputation:** Prepared strategies for handling missing values in `TotalCharges` and `tenure`.
 * **Normalization:** Applied scaling techniques to ensure features like `MonthlyCharges` and `tenure` are comparable for modeling.
