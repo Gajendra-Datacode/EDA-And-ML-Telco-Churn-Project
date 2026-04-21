@@ -6,6 +6,7 @@ This project focuses on the critical business challenge of customer retention in
 ### Key Objectives:
 * **Data Preparation:** Convert raw CSV data into a clean, normalized format suitable for analysis.
 * **Methodology Documentation:** Provide transparent, reproducible code detailing the exact steps taken to clean and transform the dataset.
+* **Predictive Modeling:** Implement Machine Learning algorithms to forecast customer churn based on historical usage and billing behavior.
 * **Analysis & Reporting:** Generate actionable insights from key performance indicators like Monthly Charges, Tenure, and Active Service Count.
 
 ---
@@ -18,9 +19,9 @@ This dataset captures demographic details, service usage, and account informatio
 **[View Raw CSV Data](Telco_Churn_Project_Row_Dataset.csv)**
 
 ### Dataset Structure
-* **Total Records:** 7,043
-* **Total Features:** 27
-* **Target Variable:** Churn (Yes/No)
+* **Total Records:** 7,043 
+* **Total Features:** 27 
+* **Target Variable:** Churn (Yes/No) 
 
 ### Feature Descriptions
 | Column | Description |
@@ -52,17 +53,20 @@ This project utilizes a comprehensive data cleaning and exploratory data analysi
 * **Feature Correlation:** Explored the relationship between `MonthlyCharges` and `TotalCharges` to identify billing inconsistencies.
 * **Service Impact:** Analyzed `ActiveServiceCount` to determine if multi-service customers have higher retention rates.
 
-### 3. Libraries Used
+### 3. Machine Learning Model
+* **Model Selection:** Implementation of classification algorithms (such as Logistic Regression or Random Forest) to predict the likelihood of a customer leaving.
+* **Feature Engineering:** Integrated engineered metrics like `TenureGroup` and `PriceSensitivity` to enhance the model's predictive power.
+* **Pipeline:** Used `train_test_split` for validation and applied `StandardScaler` to normalize feature scales, ensuring stable model convergence.
+* **Evaluation:** Focused on metrics such as Accuracy and Recall to prioritize the identification of at-risk customers.
+
+### 4. Libraries Used
 * **Pandas & NumPy:** For data manipulation and cleanup.
 * **Matplotlib & Seaborn:** For statistical visualizations.
-* **Scikit-Learn:** For preprocessing and model preparation (StandardScaler, LabelEncoder).
+* **Scikit-Learn:** For preprocessing, model preparation (StandardScaler, LabelEncoder), and predictive modeling.
 
 ---
 
-## Cleaned Dataset Summary 
-
-**[View Clean_Data](Telco_Churn_Clean_Dataset.xlsx)**
-
+## Cleaned Dataset Summary
 ### 1. Data Integrity
 * **Numerical Imputation:** Prepared strategies for handling missing values in `TotalCharges` and `tenure`.
 * **Normalization:** Applied scaling techniques to ensure features like `MonthlyCharges` and `tenure` are comparable for modeling.
@@ -75,4 +79,4 @@ This project utilizes a comprehensive data cleaning and exploratory data analysi
 ---
 
 ## Conclusion
-Understanding customer churn is vital for sustainable growth in telecommunications. This project demonstrates how systematic data cleaning—from dropping redundant features to managing missing values—uncovers the underlying patterns that drive customer loyalty. By focusing on engineered features like `ActiveServiceCount` and `PriceSensitivity`, businesses can proactively target at-risk customers.
+Understanding customer churn is vital for sustainable growth in telecommunications. This project demonstrates how systematic data cleaning—from dropping redundant features to managing missing values—uncovers the underlying patterns that drive customer loyalty. By leveraging Machine Learning models, businesses can transition from reactive analysis to proactive retention strategies.
