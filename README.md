@@ -10,6 +10,11 @@ This project focuses on the critical business challenge of customer retention in
 * **Analysis & Reporting:** Generate actionable insights from key performance indicators like Monthly Charges, Tenure, and Active Service Count.
 
 ---
+##  Project Resources
+
+-  Source Code: [Open Notebook](https://drive.google.com/drive/folders/1-cAeiWcxfTJWtX5uV10UMMT4Okbvjr3u?usp=drive_link)
+
+---
 
 ## Telco Churn Dataset
 
